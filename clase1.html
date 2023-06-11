@@ -1,25 +1,40 @@
-<!-- DOCTYPE es una declaracion del tipo de documento. 
-    Es la única etiqueta que no tiene una etiqueta de cierre -->
+<!-- DOCTYPE es una declaración del tipo de documento. 
+    Es la única etiqueta que no tiene una etiqueta de cierre.
+Además, indica que el documento está bajo el estándar de HTML5 -->
 <!DOCTYPE html> 
 
-<!-- lang define el idioma que va visualizarse en el documento  -->
+<!--HTML representa la raíz del documento HTML 
+    LANG define el idioma que va visualizarse en el documento  -->
 <html lang="es">
 
+<!-- HEAD, en el interior de esta etiquet incluiremos la colección de metadatos sobre el documento y los enlaces a scripts y hojas de estilo -->
 <head>
-    <!-- charset es un formato estandar para almacenar carateres Unicode. Wizard html esta conformado por UTF-8. 
+    <!-- CHARTSET es un formato estandar para almacenar carateres Unicode. Wizard html esta conformado por UTF-8. 
     UTF-8 utiliza una secuencia única de 1,2,3 o 4 bytes para codificar cada caracter en el juego de caracteres Unicode.  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title permite vizualizar el nombre del sitio web indicado dentro de él en la solapa de la ventana del navegador -->
+    <!-- TITTLE representa el título del documento y se vizualiza en la baarra superior del navegador o en las pestañas de página. -->
     <title>Curso Front End</title>
 </head>
 
-<body> <!-- Body, dentro de este veremos el cuerpo y todo el contenido del sitio web -->
-    <header>
-        <!-- contenido -->
+<body> <!-- BODY, dentro de esta estiqueta veremos el cuerpo y todo el contenido del sitio web; es decir veremos el contenido principal del documento HTML y sólo exite uno en el documento -->
+    <header> <!--HEADER, esta etiqueta determina la cabecera de una web o de un elemento-->
+        <!-- Las etiquetas hx, siendo x un número de 1 a 6, estamos haciendo mención aun linea de texto de importancia. -->
         <h1> Primer documento HMTL del curso de Front End </h1>
     </header>
+    <main> <!--MAIN, en etiqueta esta ubicado el contenido principal del archivo, y sólo existe un elemento de este tipo en el documento.-->
+        <p> Cuando se habla parrafo en HTML, nos referimos a la etiqueta < p > y < /p >, que las etiquetas son contenedoras de inicio y fin de dicha etiqueta. Dentro de la cual colocaremos desde unas pocas palabras hasta un amplio texto. </p>
+
+        <p> Cuando hablamos Titulos/encabezados en HTML, hacemos uso de las etiquetas hx, siendo x un número de 1 a 6, estamos haciendo mención aun linea de texto de importancia. Por ejemplo: h1 y h2 son utilizadas con encabezado y/o titulo principal. 
+        Conforme incrimenta su valor, menor es el tamaño del texo contenidos en ellas. A Continuación podremos observar como varian en importancia y tamaño el mismo contenido de texto colocado en las distintas etiquetas de hx  </p>
+        <h1> Texto de ejemplo de la etqueta h1 </h1>
+        <h2> Texto de ejemplo de la etqueta h2 </h2>
+        <h3> Texto de ejemplo de la etqueta h3 </h3>
+        <h4> Texto de ejemplo de la etqueta h4 </h4>
+        <h5> Texto de ejemplo de la etqueta h5 </h5>
+        <h6> Texto de ejemplo de la etqueta h6 </h6>
+    </main>
 </body>
 
-</html>
+</html> 
