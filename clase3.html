@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3: Formularios</title>
+</head>
+<body>
+    <form>
+        <!--dentro de la etiqueta input, podemos especificar que tipo de contenido muestra/asigna mediante el atributo TYPE. Por ejemplo: 
+            type="email" el input espera recibir un correo electronico, y el type="button" lo que aparece en pantalla será un botón, dentro del cual indicamos mediante value.
+            type="file"
+            type="file"
+            type="password"
+            type="date", con este atributo le indicamos al usuario que ingrese la fecha.
+            type="datetime-local", con este atributo le indicamos al usuario que ingrese la fecha y hora.
+        otros atributos
+            - id, es el nombre identificador/referencia del tipo de elemento input
+            - value, es el valor que le asignamos a la variable. Ej.: "aceptar", en el caso del botón
+            - placeholder, este atributo es un valor descriptivo, es decir, muestra al usuario el contenido que debe indicar-->
+        <p>Indiquenos sus datos y la duda que tenga para podemos contactarnos con usted.</p>
+        <input type="text" name="Nombre" id="idNombre" pattern="[a-z A-Z] {1,20}" placeholder="Ingrese su Nombre" required autofocus><br>
+        <input type="text" name="Apellido" id="idApellido"pattern="[a-z A-Z] {1,20}" placeholder="Ingrese su Apellido" required><br>
+        <input type="email" name="CorreoElectronico" id="idCorreoElectronico" placeholder="Indique su Correo Electrónico" required><br>
+        <input type="text" name="Edad" id="idEdad" pattern="[0-9] {2}" placeholder="Ingrese su edad" required><br>
+        <input type="button" value="Enviar"><br><br>
+        <br>
+        <!-- la etiqueta LABEL -->
+        <label for=""></label>
+    </form>
+</body>
+</html>
