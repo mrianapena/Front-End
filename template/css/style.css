@@ -196,7 +196,7 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #C5DA2D  ;
+  color: #34C0DF  ;
   text-decoration: underline;
 }
 
@@ -215,24 +215,24 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started {
-  background: #f1a51fff;
-  border: 2px solid #f1a51fff;
+  background: #34C0DF;
+  border: 2px solid #34C0DF;
   color: #fff;
 }
 
 #intro .intro-info .btn-get-started:hover {
   background: none;
-  border-color: #50535c;
+  border-color: #fff;
   color: #fff;
 }
 
 #intro .intro-info .btn-services {
-  border: 2px solid #50535c  ;
+  border: 2px solid #fff  ;
 }
 
 #intro .intro-info .btn-services:hover {
-  background: #f1a51fff  ;
-  border-color: #f1a51fff;
+  background: #34C0DF  ;
+  border-color: #34C0DF;
   color: #fff;
 }
 
