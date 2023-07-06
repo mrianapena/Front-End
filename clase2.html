@@ -7,14 +7,14 @@
     <title> Módulo 2: Estructura básica de un archivo HTML</title>
 </head>
 <body>
-    <h1> Etiquetas y contenido</h1>
+    <h1> Etiquetas y contenido </h1>
     <hr>
     <!-- la etiqueta p define una parte WEB que debe mostrarse como un párrafo -->
     <p>La etiqueta hr cambio temático entre párrafos</p>
-    <!--  -->
 
+    <!-- LISTAS-->
     <h3>Listas</h3>
-    <p>Las etiquetas ol y ul definen listas de elementos. La diferencia entre ellas es que, en la etiqueta ol, la lista definida será de manera ordenena, mientras que con la etiqueta ul, la lista no tendrá orden.
+    <p>Las etiquetas ol y ul definen listas de elementos. La diferencia entre ellas es que, en la etiqueta ol, la lista definida será de manera ordenena, mientras que con la etiqueta ul, la lista no tendrá orden, es decir que en lgar de un ordenamiento númerico apareceran viñetas.
     A cada elemento de las listas se definen con la etiqueta li.
     <br>
     Veamos los siguientes ejemplos, primero estará una lista ordenada, seguido de una lista son orden.    </p>
@@ -33,16 +33,77 @@
         <li>Módulo 4 </li>
     </ul>
 
-
-    <!-- div: El objetivo de la etiqueta div es agrupar elementos diversos dentro de un único bloque, esto es útil  
-    span: Con la etiqueta span también es posible agrupar elementos, pero no dentro de un bloque, sino en forma lineal. Aquí, <span> se utiliza para resaltar una parte específica de un texto dentro de un párrafo. Puede aplicarse estilos adicionales al contenido del <span> para darle un aspecto distinto. -->
+    <!-- USO DE DIV-->
+    <!-- DIV: El objetivo de la etiqueta div es agrupar elementos diversos dentro de un único bloque, esto es útil  .
+    SPAN: Con la etiqueta span también es posible agrupar elementos, pero no dentro de un bloque, sino en forma lineal. Aquí, <span> se utiliza para resaltar una parte específica de un texto dentro de un párrafo. Puede aplicarse estilos adicionales al contenido del <span> para darle un aspecto distinto. -->
     <div >
-        <h3>Productos</h3>
+        <h3>Cursos</h3>
         <ul>
-          <li><span >Producto 1</span></li>
-          <li><span >Producto 2</span></li>
-          <li>Producto 3</li>
+          <li><span >Diseño UX: Experiencia de usuario</span></li>
+          <li><span >Desarrollo UI</span></li>
+          <li>Desarrollo Front-End con framwork Angular</li>
+          <li>Desarrollo Back-End con MongoDB</li>
+          <li>Desarrollo Full Stack</li>
         </ul>
-      </div>      
+    </div>   
+
+    <!-- USO DE DIV-->
+    <p> la etiqueta a representa un enlace(hipervinculo) a otro sitio web o a alguna parte en particular de nuestro propio sitio web (dentro del menú de navegación), oseando el atributo hfer= "enlace", y con atributo target definimos el tipo, para q abra una nueva pestaña o se redireccione a otra parte de nuestro sitio</p>
+    <a href="http://google.com.ar"> Accede a Google</a>
+    <br>
+
+    <!-- FORMULARIOS: INPUT Y LABEL-->
+    <!--Dentro de las estiquetas FORM se incluiran los diferentes elementos que serán enviados para ser procesadores por el servidor web.-->
+    <p>Si te interesa algunos de nuestros cursos, dejanos un mensaje</p>
+    <form action="">
+        <label for="">Dejanos tu mensaje y nos contactaremos contigo</label> <br><br>
+        <label for="">Nombre y Apellido: </label>
+        <input type="text" name="" id=""><br><br>
+        <label for="">Correo electronico: </label>
+        <input type="email" name="" id=""><br><br>
+        <label for="">Nombre del curso de interés: </label>
+        <input type="text" name="" id=""><br><br>
+        <input type="button" value="Enviar">
+    </form>
+    <br><br> <!-- Cada etiqueta br, indica un salto de línea-->
+
+    <!-- FORMULARIOS: TABLAS-->
+    <form action="">
+        <label for="">Dejanos tu mensaje y nos contactaremos contigo</label> <br>
+        <table> <!--dentro de la etiqueta TABLE podemos usar el atributo border para encerrar los elementos de la tabla-->
+            <tr>
+                <td><label for="">Nombre y Apellido: </label></td>
+                <td><input type="text" name="" id=""> </td>
+            </tr>
+            <tr>
+                <td><label for="">Correo electronico: </label> </td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Nombre del curso de interés: </label></td>
+                <td><input type="text" name="" id=""></td>    
+            </tr>
+        </table>
+        <input type="button" value="Enviar">
+    </form><br><br>
+
+    <!-- FORMULARIOS: SELECT Y OPTION-->
+    <!--Con la etiqueta SELECT puedo realizar una caja de opciones y con la etiqueta OPTION indico que opciones le presento al usuario para seleccionar y siempre coloco una por defecto.-->
+    <p>Sí ya sos parte de nuestra comunidad de estudiantes</p>
+    <form action="">
+        <label for="">Indicanos el motivo de tu sugerencia y nos contactaremos contigo</label> <br><br>
+        <label for="">Nombre y Apellido: </label>
+        <input type="text" name="" id=""><br><br>
+        <label for="">Correo electronico: </label>
+        <input type="email" name="" id=""><br><br>
+        <label for="">Motivo del contacto: </label>
+        <select name="motivo" id="">
+            <option value="value1"select>Sugerencia</option>
+            <option value="value2">Reclamo</option>
+            <option value="value3">Renovar Inscipción</option>
+            <option value="value4">Otro</option>
+        </select><br><br>
+        <input type="button" value="Enviar">
+    </form>
 </body>
 </html>

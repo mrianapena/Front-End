@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+# Nuestro primer CSS en curso FrontEnd
+Nota: El archivo es stylec4, por corresponde al archivo clase.4html
+--------------------------------------------------------------*/
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+    }
+    a {
+    color: #007bff;
+    text-decoration: none;
+    }
+    
+/*--------------------------------------------------------------
+# Perzonalizando nuestro ID de HTML
+-------------------------------------------------------------*/
+#institucional {
+   color: #444;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }

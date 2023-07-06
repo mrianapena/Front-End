@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 3: Formularios</title>
+    <title>Módulo 2: Estructura básica de un archivo HTML</title>
 </head>
 <body>
+    <h1>Clase 3: Formularios</h1>
     <form>
-        <!--dentro de la etiqueta input, podemos especificar que tipo de contenido muestra/asigna mediante el atributo TYPE. Por ejemplo: 
-            type="email" el input espera recibir un correo electronico, y el type="button" lo que aparece en pantalla será un botón, dentro del cual indicamos mediante value.
-            type="file"
-            type="file"
-            type="password"
-            type="date", con este atributo le indicamos al usuario que ingrese la fecha.
-            type="datetime-local", con este atributo le indicamos al usuario que ingrese la fecha y hora.
+        <!--dentro de la etiqueta input, podemos especificar que tipo de contenido muestra/asigna mediante el atributo TYPE.
         otros atributos
             - id, es el nombre identificador/referencia del tipo de elemento input
             - value, es el valor que le asignamos a la variable. Ej.: "aceptar", en el caso del botón
@@ -25,8 +20,103 @@
         <input type="text" name="Edad" id="idEdad" pattern="[0-9] {2}" placeholder="Ingrese su edad" required><br>
         <input type="button" value="Enviar"><br><br>
         <br>
+        <p>Indiquenos el color de su preferencia.</p>
+        <input type="color" name="" id="idColor">
         <!-- la etiqueta LABEL -->
         <label for=""></label>
+
+        <p>Tipos y propiedades de los atributos del tipo TYPE propio de la etiqueta INPUT</p>
+        <table>
+            <tr>
+                <td>text</td>
+                <td>Define un campo de texto de una sola línea.</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td>Define un botón</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Se utiliza para definir campos de entrada qu deben contener un color, osea que le indicamos al usuario que seleccione el color de su preferencia.</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>con este atributo le indicamos al usuario que ingrese la fecha.</td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>Es un campo que especifica la entrada de fecha y hora, sin zona horaria, es decir le indicamos al usuario que ingrese la fecha y hora.</td>
+            </tr>            
+            <tr>
+                <td>file</td>
+                <td>con este atributo le especificamos al usuario que suba/indique el archivo que desea subir/publicar.</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>define un campo de contraseña : aquí le indicamos al usuario que intruduzca la contraseña para su logeo/registro, la cual no será visible, solo verá el sigiente simbolo *.</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>define un botón para enviar datos de formulario a un controlador de formulario </td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td>Elemento de control de edición de texto multilínea.</td>
+            </tr>
+        </table>
+        <br>
+        <p>Otros tipos de los atributos propios de la etiqueta INPUT</p>
+        <table>
+            <tr>
+                <td>value</td>
+                <td>Representa el valor inicial del input.</td>
+            </tr>
+            <tr>
+                <td>readonly</td>
+                <td>Indica que el input es de solo lectura.</td>
+            </tr>
+            <tr>
+                <td>size</td>
+                <td>Cantidad de caracteres que se visualizan. Por defecto es 20.</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>Cantidad maxima de caracteres.</td>
+            </tr>
+            <tr>
+                <td>required</td>
+                <td>Valor obligatorio</td>
+            </tr>            
+            <tr>
+                <td>autofocus</td>
+                <td>Indica al navegador que se debe seleccionar el input cuando se
+                    carga la pagina.</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td>Muestra un valor descriptivo dentro del input, por ejemplo: Ingrese su Nombre completo</td>
+            </tr>
+            <tr>
+                <td>pattern</td>
+                <td>Permite indicar un patron, bajo expresiones regulares. </td>
+            </tr>
+        </table>        
     </form>
+
+    <h2>Etiquetas para Incrustar contenido</h2>
+    <form action="">
+        <table>
+            <tr>
+                <td>img</td>
+                <td>Permite incluir una imagen dentro de nuestro HTML.</td>
+            </tr>
+            <tr>
+                <td>video</td>
+                <td>Permite incluir un video dentro de nuestro HTML.</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </form>
+
 </body>
 </html>
